@@ -14,6 +14,7 @@ jobs:
         goals: 'clean package'
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        #testing release pipelines
 
     # Now publish the single JAR artifact
     - task: PublishBuildArtifacts@1
